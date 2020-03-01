@@ -3,6 +3,14 @@ library("shiny")
 
 # We'll begin by defining some of the UI elements as variables
 # This helps keep the code organized and easier to debug
+my_ui <- fluidPage(
+  intro_panel <- titlePanel(), 
+  titlePanel("Income Inequality"), 
+  p("The below diagram was created by the New York Times to illustrate the increasing level of inequality in the US."), 
+  img("src", "www/inequality.png"), 
+  p(a("https://www.nytimes.com/interactive/2017/08/07/opinion/leonhardt-income-inequality.html"))
+  
+)
 
 # Define a variable `intro_panel` for your first page. It should be a
 # `tabPanel()` with a title "Introduction" to represent the first tab.
